@@ -20,9 +20,9 @@ public class PatientServiceImpl implements PatientService {
 
 	PatientDao patientDao; // = new PatientDaoImpl();
 
-	private static List<Patient> patient = new ArrayList<Patient>(
-			Arrays.asList(new Patient("1", "Aravind", "M", "20150217"), new Patient("2", "Viswa", "M", "19930217"),
-					new Patient("3", "Saumiya", "M", "20000217")));
+	private static List<Patient> patient = new ArrayList<Patient>(Arrays.asList(
+			new Patient("1", "Aravind", "male", "1993-10-08"), new Patient("2", "Viswa", "male", "1993-08-07"),
+			new Patient("3", "Saumiya", "female", "1994-02-12")));
 
 	@Autowired
 	public void setPatientDao(PatientDao patientDao) {

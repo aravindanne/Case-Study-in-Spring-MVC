@@ -23,9 +23,9 @@ public class StudyServiceImpl implements StudyService {
 
 	public static Scheduling_Computations sc = new Scheduling_Computations();
 	private static List<Study> study = new ArrayList<Study>(
-			Arrays.asList(new Study("1", "123", "Desc 1", "PLANNED", 2, 3, 1, 2),
-					new Study("2", "123", "Desc 2", "PLANNED", 3, 4, 2, 2),
-					new Study("3", "123", "Desc 1", "PLANNED", 13, 14, 1, 1)));
+			Arrays.asList(new Study("1", "1", "upper abdamen test", "PLANNED", 9, 10, 1, 1),
+					new Study("2", "2", "liver test", "PLANNED", 16, 17, 2, 1),
+					new Study("3", "3", "kidney and liver test", "PLANNED", 11, 12, 2, 2)));
 
 	@Autowired
 	public void setPatientDao(StudyDao studyDao) {

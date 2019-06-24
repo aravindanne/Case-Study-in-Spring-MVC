@@ -11,9 +11,16 @@
 	http://www.springframework.org/schema/context
 	http://www.springframework.org/schema/context/spring-context-2.5.xsd">
 
-<ctx:annotation-config></ctx:annotation-config>
-<ctx:component-scan base-package="com.controller"></ctx:component-scan>
-
+	<ctx:annotation-config></ctx:annotation-config>
+	<ctx:component-scan base-package="com.controller"></ctx:component-scan>
+	<ctx:component-scan base-package="com.config"></ctx:component-scan>
+	
+<!-- 	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="configLocation">
+			<value>file:Src/hibernate.cfg.xml</value>
+		</property>
+	</bean> -->
 
 
 </beans>

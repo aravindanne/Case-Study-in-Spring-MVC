@@ -12,13 +12,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.dao.PatientDao;
+import com.dao.PatientDaoImpl;
 import com.model.Patient;
 
 @Service
 @Transactional
 public class PatientServiceImpl implements PatientService {
 
-	PatientDao patientDao; // = new PatientDaoImpl();
+	PatientDao patientDao = new PatientDaoImpl();
 
 	private static List<Patient> patient = new ArrayList<Patient>(Arrays.asList(
 			new Patient("1", "Aravind", "male", "1993-10-08"), new Patient("2", "Viswa", "male", "1993-08-07"),

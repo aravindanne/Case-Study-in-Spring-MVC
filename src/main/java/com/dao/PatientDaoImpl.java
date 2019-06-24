@@ -7,9 +7,11 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Service;
 
 import com.model.Patient;
 
+@Service
 @Repository
 public class PatientDaoImpl implements PatientDao {
 
@@ -25,6 +27,7 @@ public class PatientDaoImpl implements PatientDao {
 			getSession().saveOrUpdate(patient);
 			return true;
 		} catch (Exception e) {
+			System.out.println("Error: " + e);
 			return false;
 		}
 	}

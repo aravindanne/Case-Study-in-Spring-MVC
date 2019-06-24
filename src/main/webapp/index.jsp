@@ -245,7 +245,7 @@ tr:nth-child(even) {
 			<div id="header-inner">
 				<div id="logo">
 					<h1>
-						<a href="#">POC with spring mvc - TEST<span></span></a>
+						<a href="#">{caresyntax - Case Study<span></span></a>
 					</h1>
 				</div>
 				<div id="top-nav"></div>
